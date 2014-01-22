@@ -24,12 +24,14 @@ public:
 
     std::size_t aliveNeighbours(std::size_t x, std::size_t y) const;
 
+    bool updatedCellValue(std::size_t x, std::size_t y) const;
+
+    void toggle(std::size_t x, std::size_t y);
+
 private:
     std::size_t m_width;
     std::size_t m_height;
     storage_type m_cells;
-
-    bool updatedCellValue(std::size_t x, std::size_t y) const;
 };
 
 #endif // BOARD_HPP
