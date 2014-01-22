@@ -46,7 +46,7 @@ std::size_t Board::aliveNeighbours(std::size_t x, std::size_t y) const
 
     for(std::size_t i = minX; i < maxX; i++)
         for(std::size_t j = minY; j < maxY; j++)
-            if((*this)(i, j)) count++;
+            if((x != i || y != j) && (*this)(i, j)) count++;
 
     return count;
 }
