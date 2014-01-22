@@ -21,8 +21,12 @@ LIBS += -L$$QGAMEOFLIFE_BIN -lQGameOfLife -lgtest
 
 SOURCES += \
     main.cpp \
-    mainwindow.cpp
+    mainwindow.cpp \
+    screen.cpp \
+    commanddockwidget.cpp
 
 HEADERS += \
-    mainwindow.hpp
+    mainwindow.hpp \
+    screen.hpp \
+    commanddockwidget.hpp
 
